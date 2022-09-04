@@ -2,8 +2,8 @@ import "@nomiclabs/hardhat-ethers";
 import { ethers } from "hardhat";
 
 async function foo() {
-    const HelloWorld = await ethers.getContractFactory("HelloWorld");
-    const hello = await HelloWorld.deploy();
+    const helloworld = await ethers.getContractFactory("helloworld");
+    const hello = await helloworld.deploy();
     await hello.deployed();
     return hello;
 }
