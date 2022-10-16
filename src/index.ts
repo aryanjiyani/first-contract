@@ -13,7 +13,7 @@ async function hasAccounts() {
     const eth = getEth();
     const accounts = await eth.request({method: "eth_acccounts"}) as string[];
 
-    return accounts && accounts.length;
+    return accounts && accounts.length; 
 }
 
 async function requestAccounts() {
@@ -28,7 +28,7 @@ async function run() {
         throw new Error("Plase let me take your money..");
     }
     const hello = new ethers.Contract(
-        "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "0x58b508a6ae5cf104e78a70f2da98a60b3a897146",
         [
             "function hello() public pure returns (string memory)",
         ],

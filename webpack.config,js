@@ -15,7 +15,9 @@ module.exports = {
         extensions: [".js", ".ts", ".json"],
     },
 
-    mode: "development",
+    module.exports = {
+        mode: 'development',
+    };
 
     module: {
         rules: [
